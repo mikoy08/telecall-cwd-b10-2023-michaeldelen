@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- materializeCSS Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Discover</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+
+
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black">
+                <ul class="left hide-on-med-and-down">
+                    <li>
+                        <a href="index.html" class="brand-logo">
+                            <img src="images/logo.png" id="logo-image">
+                        </a>
+                    </li>
+                    <li><span class="title">Free shipping on orders over $75. Call us 123-456-789</span></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <a href="index.html"><li class="show-on-med-and-down hide-on-large-only">
+                        <img src="images/logo.png" class="responsive-img" id="little-logo"></a>
+                    </li>
+                    <li class="show-on-medium hide-on-large-only hide-on-small-only">
+                        <span class="little-title">Free shipping on orders over $75. Call us 123-456-789</span>
+                    </li>
+                </ul>
+                
+                <ul class="right">
+                    <li id="main-nav">
+                        <a class="modal-trigger" data-target="modal-login">
+                            <span class="login-title">
+                                Login<i class="material-icons right">person</i>
+                            </span>
+                        </a>   
+                    </li>
+                    <li id="main-nav">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">add_shopping_cart</i></a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </div>
+    
+    <!-- Login Modals -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <form>
+                    <p class="flow-text">LOGIN</p>
+                    <br>
+                    <div class="divider"></div>
+                    <br>
+                    <label>Email Address</label>
+                    <input type="text" id="login-box" placeholder="mykel831@gmail.com">
+                    <br><br>
+                    <label>Password</label>
+                    <input type="password" id="login-box">
+                    <a href="">Forgot password?</a>
+                    <br><br>
+                    <button id="page-btn" class="btn z-depth-0">LOGIN
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+                    <br><br>
+                    <div class="divider"></div>
+                    <br><br>
+                    <h6>DON'T HAVE AN ACCOUNT YET?</h6>
+                    <p>Move through checkout faster, store multiple shipping addresses, keep track of all your orders more easily</p>
+                    <br><br>
+                    <button id="page-btn" class="btn z-depth-0">CREATE AN ACCOUNT
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Nav -->
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="nav-main">
+            <div class="row">
+                <div class="col s8 offset-s4">
+                    <div class="nav-wrapper center">
+                        <ul class="hide-on-med-and-down">
+                            <li id="main-nav"><a href="products.html" class="dropdown-trigger" data-target="dropdown1">PRODUCTS</a></li>
+                            <li id="main-nav"><a href="#">WHAT'S NEW</a></li>
+                            <li id="main-nav"><a href="#">DISCOVER</a></li>
+                            <li id="main-nav"><a href="support.html">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <!-- sidenav list -->
+    <ul class="sidenav collapsible" id="mobile-demo">
+        <li class="center black" id="small-logo">
+            <a href="index.html"><img src="images/logo.png" class="responsive-img" id="logo-img"></a></li>
+        <ul class="collapsible">
+            <li>
+                <li>
+                    <div class="collapsible-header waves-effect">
+                        PRODUCTS
+                        <i class="material-icons right">arrow_forward</i>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="side-content">
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Vehicle</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Tracks</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Tune-Up Parts</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Accesories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </li>                           
+        </ul>
+        <li><a href="#">WHAT'S NEW</a></li>
+        <li><a href="#">DISCOVER</a></li>
+        <li><a href="support.html">SUPPORT</a></li>
+    </ul>
+    <!-- sidenav cart -->
+    <ul id="slide-out" class="sidenav">
+        <li class="black">
+            <div class="row">
+                <div class="col s2">
+                    <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+                </div>
+                <div class="col s10">
+                    <span class="white-text">NO ITEMS IN CART</span>
+                </div>
+            </div> 
+        </li>
+        <li>
+            <div class="nav-wrapper">
+                <nav class="light-blue darken-4 z-depth-0">
+                    <form>
+                        <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search..">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </li>
+        <li class="center">
+            <button id="page-btn" class="btn z-depth-0">Start Shopping
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+        </li>
+    </ul>
+
+<!-- parallax video -->
+    <div class="parallax-container">
+        <section class="showcase">
+            <video src="images/video.mp4" muted loop autoplay class="responsive-video"></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Build Your Dream Tamiya 4WD Today.</h2>
+                <h4>Now 15% Off On All Items.</h4>
+                <br><br><br>
+                <a href="products.html"><button id="page-btn" class="btn z-depth-0">BUILD NOW
+                    <i class="material-icons right">arrow_forward</i>
+                </button></a>
+            </div>
+        </section>
+    </div>
+
+<!-- body content -->
+<div class="container">
+    <div class="row white-text">
+        <div class="col s12">
+            <h4>About TAMIYA</h4>
+        </div>
+    </div>
+    <div class="row white-text">
+        <div class="col s12 m6 right">
+            <img src="images/about.jpg" class="responsive-img">
+        </div>
+        <div class="col s12 m6">
+            <p>Tamiya ventured into the modeling business in 1948, with a scale wooden ship model kit. Since then, Tamiya has been striving to offer merchandise that can truly be called "First in Quality Around the World."
+
+                Now Tamiya is offering more than 3000 different products, both in the fields of precision static models and high performance radio control vehicles. These products are not only sold in Japan but also exported in vast quantities to the United States, Europe, South East Asia, and to many other parts of the world. The standard of excellence achieved by Tamiya is regarded as among the very finest in the world of model hobbies.</p>
+        </div>
+    </div>
+    <div class="row white-text">
+        <div class="col s12">
+            <h5>HISTORY OF TAMIYA INC.</h5>
+        </div>
+    </div>
+    <div class="row white-text center">
+        <div class="col s12 m6" style="padding-top: 10px; margin-bottom: 10px;">
+            <p class="flow-text">1946</p>
+            <p>Mr. Yoshio Tamiya founded a saw mill/lumber factory in Shizuoka-City.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1947</p>
+            <p>A wooden model department was organized within the lumber company.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1953</p>
+            <p>Sawmill was closed and Tamiya became a specialized wooden model kit maker.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1960</p>
+            <p>Tamiya began producing model kits.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1968</p>
+            <p>Tamiya became the first Japanese model kit manufacturer to exhibit at the Nuremberg Toy Fair in Germany. The 1/35 scale Military Miniature Series was started.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <p class="flow-text">1976</p>
+            <p>Tamiya released the 1/12 scale electric powered R/C Porsche 934 Turbo that triggered radio control cars' booming popularity.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1977</p>
+            <p>Mr. Shunsaku Tamiya became the president and Chief Executive for Tamiya Plastic Model, Co. The 1/24 scale Sports Car Series was started.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+        </div>
+        <div class="col s12 m6" style="padding-top: 10px; margin-bottom: 10px;">
+            <p class="flow-text">1981</p>
+            <p>The 1/12 scale Motorcycle Series was started.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1984</p>
+            <p>Mr. Shunsaku Tamiya became the president and Chief Executive for Tamiya, Inc.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1987</p>
+            <p>1/32 scale motorized "Racing Mini 4WD" cars, which were first introduced in the previous year, recorded a total production of quantity exceeding 10 million units.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1988</p>
+            <p>Founder Mr. Yoshio Tamiya died at the age of 83.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1989</p>
+            <p>Tamiya America, Inc. was established in Los Angeles, CA, U.S.A. Tamiya Europe was established in Germany.</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1995</p>
+            <p>Tamiya Philippines, Inc. was established and started model kit production</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+            <p class="flow-text">1996</p>
+            <p>The Tamiya Kakegawa R/C Circuit was opened in Kakegawa-City, Shizuoka, Japan</p>
+            <br>
+            <div class="divider hide-on-med-and-up"></div>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<footer class="page-footer">
+    <div class="container">
+        <br>
+        <div class="row center">
+            <div class="col s12">
+                <a href="index.html"></a><img src="images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <br>
+        <div class="row">
+            <div class="col s3">
+                <p class="footer-title">PRODUCTS</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="">Vehicle</a>
+                    </li>
+                    <li>
+                        <a href="">Tracks</a>
+                    </li>
+                    <li>
+                        <a href="">Tune-Up Parts</a>
+                    </li>
+                    <li>
+                        <a href="">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">THE COMPANY</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="">Premium Area</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">CONTACT US</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        mykel831@gmail.com
+                    </li>
+                    <li>
+                        500 Terry Francine St. San Francisco
+                    </li>
+                    <li>
+                        CA 94158
+                    </li>
+                    <li>
+                        Tel: 123-456-7890
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">FOLLOW US</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class="divider"></div>
+        <br>
+        <p class="copyright center">© 2023 TAMIYA 4WD by Mikoy. All Rights Reserved.</p>
+        <br>
+    </div>
+</footer>
+        
+
+    <!-- Font awesome jscript -->
+    <script src="https://kit.fontawesome.com/3d0d2000ae.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- js script-->
+    <script src="js/script.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            // modal
+            $('.modal').modal();
+            // collapsible
+            $('.collapsible').collapsible();
+        })
+    </script>
+
+</body>
+</html>

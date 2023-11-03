@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- materializeCSS Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Products</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+
+
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black">
+                <ul class="left hide-on-med-and-down">
+                    <li>
+                        <a href="index.html" class="brand-logo">
+                            <img src="images/logo.png" id="logo-image">
+                        </a>
+                    </li>
+                    <li><span class="title">Free shipping on orders over $75. Call us 123-456-789</span></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <a href="index.html"><li class="show-on-med-and-down hide-on-large-only">
+                        <img src="images/logo.png" class="responsive-img" id="little-logo"></a>
+                    </li>
+                    <li class="show-on-medium hide-on-large-only hide-on-small-only">
+                        <span class="little-title">Free shipping on orders over $75. Call us 123-456-789</span>
+                    </li>
+                </ul>
+                
+                <ul class="right">
+                    <li id="main-nav">
+                        <a class="modal-trigger" data-target="modal-login">
+                            <span class="login-title">
+                                Login<i class="material-icons right">person</i>
+                            </span>
+                        </a>   
+                    </li>
+                    <li id="main-nav">
+                        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">add_shopping_cart</i></a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </div>
+    
+    <!-- Login Modals -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <form>
+                    <p class="flow-text">LOGIN</p>
+                    <br>
+                    <div class="divider"></div>
+                    <br>
+                    <label>Email Address</label>
+                    <input type="text" id="login-box" placeholder="mykel831@gmail.com">
+                    <br><br>
+                    <label>Password</label>
+                    <input type="password" id="login-box">
+                    <a href="">Forgot password?</a>
+                    <br><br>
+                    <button id="page-btn" class="btn z-depth-0">LOGIN
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+                    <br><br>
+                    <div class="divider"></div>
+                    <br><br>
+                    <h6>DON'T HAVE AN ACCOUNT YET?</h6>
+                    <p>Move through checkout faster, store multiple shipping addresses, keep track of all your orders more easily</p>
+                    <br><br>
+                    <button id="page-btn" class="btn z-depth-0">CREATE AN ACCOUNT
+                        <i class="material-icons right">arrow_forward</i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Nav -->
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="nav-main">
+            <div class="row">
+                <div class="col s8 offset-s4">
+                    <div class="nav-wrapper center">
+                        <ul class="hide-on-med-and-down">
+                            <li id="main-nav"><a href="products.html" class="dropdown-trigger">PRODUCTS</a></li>
+                            <li id="main-nav"><a href="#">WHAT'S NEW</a></li>
+                            <li id="main-nav"><a href="discover.html">DISCOVER</a></li>
+                            <li id="main-nav"><a href="support.html">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <!-- sidenav list -->
+    <ul class="sidenav collapsible" id="mobile-demo">
+        <li class="center black" id="small-logo">
+            <a href="index.html"><img src="images/logo.png" class="responsive-img" id="logo-img"></a></li>
+        <ul class="collapsible">
+            <li>
+                <li>
+                    <div class="collapsible-header waves-effect">
+                        PRODUCTS
+                        <i class="material-icons right">arrow_forward</i>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="side-content">
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Vehicle</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Tracks</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Tune-Up Parts</a>
+                            </li>
+                            <li><a href="products.html">
+                                <i class="material-icons">chevron_right</i>Accesories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </li>                           
+        </ul>
+        <li><a href="#">WHAT'S NEW</a></li>
+        <li><a href="discover.html">DISCOVER</a></li>
+        <li><a href="support.html">SUPPORT</a></li>
+    </ul>
+    <!-- sidenav cart -->
+    <ul id="slide-out" class="sidenav">
+        <li class="black">
+            <div class="row">
+                <div class="col s2">
+                    <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+                </div>
+                <div class="col s10">
+                    <span class="white-text">NO ITEMS IN CART</span>
+                </div>
+            </div> 
+        </li>
+        <li>
+            <div class="nav-wrapper">
+                <nav class="light-blue darken-4 z-depth-0">
+                    <form>
+                        <div class="input-field">
+                        <input id="search" type="search" required placeholder="Search..">
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </li>
+        <li class="center">
+            <button id="page-btn" class="btn z-depth-0">Start Shopping
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+        </li>
+    </ul>
+
+<!-- parallax video -->
+    <div class="parallax-container">
+        <section class="showcase">
+            <video src="images/video.mp4" muted loop autoplay class="responsive-video"></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Build Your Dream Tamiya 4WD Today.</h2>
+                <h4>Now 15% Off On All Items.</h4>
+                <br><br><br>
+                <a href="products.html"><button id="page-btn" class="btn z-depth-0">BUILD NOW
+                    <i class="material-icons right">arrow_forward</i>
+                </button></a>
+            </div>
+        </section>
+    </div>
+
+<!-- body content -->
+
+<div class="container" id="product-div">
+    <div class="row">
+        <div class="col s3 hide-on-med-and-down">
+            <span class="flow-text white-text">CATEGORIES</span>
+            <br><br>
+                <div class="divider"></div>
+            <ul id="list2">
+                <li>
+                    <a href="#">VEHICLE</a>
+                </li>
+                <li>
+                    <a href="#">TRACKS</a>
+                </li>
+                <li>
+                    <a href="#">TUNE-UP PARTS</a>
+                </li>
+                <li>
+                    <a href="#">ACCESSORIES</a>
+                </li>
+            </ul>
+        </div>
+        <!-- table of items -->
+        <div class="col s12 l9">
+            <table class="highlight white-text centered">
+                <thead>
+                    <th>ITEMS</th>
+                    <th>DESCRIPTION</th>
+                    <th>ITEM NUMBER</th>
+                    <th>PRICE</th> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/1.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR FRONT UNDER GUARD</td>
+                        <td>#95537</td>
+                        <td>$ 3.00</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/2.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR STEEL BEARING 4PCS</td>
+                        <td>#15393</td>
+                        <td>$ 7.00</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/3.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR HYPER DASH MOTOR PRO</td>
+                        <td>#95142</td>
+                        <td>$ 4.20</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/4.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR ABILISTA</td>
+                        <td>#18639</td>
+                        <td>$ 17.00</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/5.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR BODY SET AERO AVANTE 2015</td>
+                        <td>#95081</td>
+                        <td>$ 3.60</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/6.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR BUSTER-SONIC PREMIUM</td>
+                        <td>#19445</td>
+                        <td>$ 15.00</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/7.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR BUMPERLESS N-03/T-03 UNITS</td>
+                        <td>#15382</td>
+                        <td>$ 4.00</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td id="table-img">
+                            <img src="images/products-images/8.jpg" class="materialboxed responsive-img" width="650"></td>
+                        <td>JR 4W SCREW SET A</td>
+                        <td>#15232</td>
+                        <td>$ 1.90</td>
+                        <td><button id="page-btn" class="btn z-depth-0">
+                            <i class="material-icons ">add_shopping_cart</i>
+                        </button></td>
+                </tbody>
+            </table>
+<!-- pagination -->
+            <br><br>
+            <ul class="pagination center">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active red"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+<footer class="page-footer">
+    <div class="container">
+        <br>
+        <div class="row center">
+            <div class="col s12">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <br>
+        <div class="row">
+            <div class="col s3">
+                <p class="footer-title">PRODUCTS</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="">Vehicle</a>
+                    </li>
+                    <li>
+                        <a href="">Tracks</a>
+                    </li>
+                    <li>
+                        <a href="">Tune-Up Parts</a>
+                    </li>
+                    <li>
+                        <a href="">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">THE COMPANY</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="">Premium Area</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">CONTACT US</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        mykel831@gmail.com
+                    </li>
+                    <li>
+                        500 Terry Francine St. San Francisco
+                    </li>
+                    <li>
+                        CA 94158
+                    </li>
+                    <li>
+                        Tel: 123-456-7890
+                    </li>
+                </ul>
+            </div>
+            <div class="col s3">
+                <p class="footer-title">FOLLOW US</p>
+                <br>
+                <ul class="footer-sub">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class="divider"></div>
+        <br>
+        <p class="copyright center">© 2023 TAMIYA 4WD by Mikoy. All Rights Reserved.</p>
+        <br>
+    </div>
+</footer>
+        
+
+    <!-- Font awesome jscript -->
+    <script src="https://kit.fontawesome.com/3d0d2000ae.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- js script-->
+    <script src="js/script.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            // modal
+            $('.modal').modal();
+            // collapsible
+            $('.collapsible').collapsible();
+            // materialboxed
+            $('.materialboxed').materialbox();
+        })
+    </script>
+
+</body>
+</html>
